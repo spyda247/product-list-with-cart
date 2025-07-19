@@ -67,12 +67,12 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-}
+} 
 .prod-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
+} 
 .prod-cta {
   display: flex;
   flex-direction: column;
@@ -83,7 +83,7 @@ body {
   width: 200px;
   height: auto;
   border-radius: 12px;
-}
+}  
 .prod-cta button {
   background-color: var(white);
   color: var(--Rose900);
@@ -97,6 +97,10 @@ body {
   display: flex;
   align-items: center;
   gap: 4px;
+}  
+.prod-cta button:hover {
+  color: hsl(14, 86%, 35%);
+  border-radius: hsl(14, 86%, 35%);
 }
 .prod-cta button img {
   width: 18px;
