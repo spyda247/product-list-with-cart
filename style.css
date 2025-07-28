@@ -186,13 +186,24 @@ body {
   cursor: pointer;
   align-self: flex-end;
   display: flex;
-  margin-top: -25px;
-  width: 28px;
-  height: 28px;
+  width: 18px;
+  height: 18px;
+  border-width: 1.8px;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
 }
+.cart-items li button:hover {
+  background-color: none;
+  border-color: var(--Rose900);
+  transition: background-color 0.3s ease;
+  background-image: var(--Rose900);
+}
+
 .cart-items li button img{
-  width: 16px;
-  height: 16px;
+  width: 8px;
+  height: 8px;
+  
 }
 .cart-total {
   display: flex;
