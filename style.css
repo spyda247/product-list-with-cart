@@ -28,6 +28,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Main Styles */
@@ -59,6 +61,7 @@ body {
 }
 .wrapper {
   display: flex;
+  flex-direction: column;
 }
 .prod-list {
   width: 75%;
@@ -67,12 +70,12 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-} 
+}
 .prod-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
-} 
+}
 .prod-cta {
   display: flex;
   flex-direction: column;
@@ -83,7 +86,7 @@ body {
   width: 200px;
   height: auto;
   border-radius: 12px;
-}  
+}
 .prod-cta button {
   background-color: var(white);
   color: var(--Rose900);
@@ -97,7 +100,7 @@ body {
   display: flex;
   align-items: center;
   gap: 4px;
-}  
+}
 .prod-cta button:hover {
   color: hsl(14, 86%, 35%);
   border-radius: hsl(14, 86%, 35%);
@@ -139,9 +142,8 @@ body {
   gap: 20px;
   flex-direction: column;
 }
-
 .cart h2 {
-  color:var(--Red);
+  color: var(--Red);
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 40px;
@@ -153,9 +155,8 @@ body {
   margin: 0 0 0 0;
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 10px;
   text-align: left;
-  
 }
 .cart-items li {
   font-size: 14px;
@@ -165,8 +166,8 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 8px 0;
- flex-direction: column;
- 
+  flex-direction: column;
+  position: relative;
 }
 .cart-items li p {
   color: #666;
@@ -193,7 +194,8 @@ body {
   border-width: 1.8px;
   justify-content: center;
   background-color: none;
-  margin-top: -10%;
+  margin-top: 0;
+  position: absolute;
 }
 .cart-items li button:hover {
   background-color: none;
@@ -201,11 +203,9 @@ body {
   transition: background-color 0.3s ease;
   background-image: var(--Rose900);
 }
-
-.cart-items li button img{
+.cart-items li button img {
   width: 8px;
   height: 8px;
-  
 }
 .cart-total {
   display: flex;
@@ -236,7 +236,6 @@ body {
   font-weight: 600;
   margin-bottom: 20px;
 }
-
 .eco-note span {
   margin-right: 6px;
 }
@@ -252,7 +251,6 @@ body {
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
 .confirm-btn:hover {
   background-color: hsl(14, 86%, 35%);
 }
@@ -268,7 +266,7 @@ body {
   border-radius: 60px;
   padding: 1px 3px;
   height: 41px;
-  width:70%;
+  width: 70%;
 }
 .qty-btn {
   background: none;
@@ -283,34 +281,39 @@ body {
   padding: 8px;
   border-radius: 100%;
   border: 2px solid #fff;
-  background-color:var(white);
   transform: scale(0.8);
   margin-top: 0.1px;
   cursor: pointer;
 }
-.qty-btn.increment img{
+.qty-btn.increment:hover {
+  background-color: white;
+}
+.qty-btn.increment img {
   width: 6px;
   color: var(--Rose500);
   height: 6px;
 }
-.qty-btn.increment:hover {
-  background-color: var(--Rose50);
+.qty-btn.increment:hover img {
+  filter: grayscale(100%);
+  filter: brightness(2%);
 }
-.qty-btn.decrement  {
+.qty-btn.decrement {
   padding: 8px;
   border-radius: 100%;
   border: 2px solid #fff;
-  background-color: var(white);
   transform: scale(0.8);
   margin-top: -1px;
+}
+.qty-btn.decrement:hover {
+  background-color: white;
 }
 .qty-btn.decrement img {
   width: 6px;
   height: 6px;
-
 }
-.qty-btn.decrement:hover {
-  background-color: var(--Rose50);
+.qty-btn.decrement:hover img {
+  filter: grayscale(100%);
+  filter: brightness(2%);
 }
 .qty-count {
   font-weight: 650;
@@ -318,9 +321,55 @@ body {
   color: var(--white);
   color: #ffffff;
 }
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .container {
     background-color: aquamarine;
+    padding: 15px;
   }
-} 
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    padding: 10px 0;
+  }
+  .prod-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .prod-card {
+    display: flex;
+    gap: 10px;
+    width: 48%;
+    padding: 0;
+  }
+  .product-cta {
+    width: 100;
+  }
+  .prod-cta img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    padding: 0;
+  }
+  .prod-details {
+    width: 90%;
+  }
+  .quantity-controls {
+    gap: 0;
+    justify-content: space-around;
+  }
+  .cart {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+}
