@@ -290,9 +290,9 @@ body {
   background-color: white;
 }
 .qty-btn.increment img {
-  width: 6px;
+  width: 10px;
+  height: 10px;
   color: var(--Rose500);
-  height: 6px;
 }
 .qty-btn.increment:hover img {
   filter: grayscale(100%);
@@ -310,8 +310,8 @@ body {
   background-color: white;
 }
 .qty-btn.decrement img {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
 }
 .qty-btn.decrement:hover img {
   filter: grayscale(100%);
