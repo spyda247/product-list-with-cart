@@ -50,25 +50,31 @@
             </div>
           </div>
 
-          <div class="prod-card">
+           <div class="prod-card">
             <div class="prod-cta">
-              <img
-                src="./assets/images/image-creme-brulee-desktop.jpg"
-                width="200"
-                height="200" />
-              <button>
-                <img
-                  src="./assets/images/icon-add-to-cart.svg"
-                  alt="cart icon" />
-                Add to Cart
-              </button>
+             <img
+              src="./assets/images/image-creme-brulee-desktop.jpg"
+              width="200"
+              height="200"
+               />
+
+            <div class="quantity-controls">
+              <button class="qty-btn decrement"> 
+                <img width="8px" height="8px" src="./assets/images/icon-decrement-quantity.svg" alt="-" />
+                 </button>
+                  <span class="qty-count ">1</span>
+                 <button class="qty-btn increment">
+               <img width="8px" height="8px" src="./assets/images/icon-increment-quantity.svg" alt="+" />
+               </button>
+              </div>
             </div>
+
             <div class="prod-details">
-              <p class="prod-category">Crème Brûlée</p>
-              <h2 class="prod-name">Vanilla Bean Crème Brûlée</h2>
-              <p class="prod-price">$7.00</p>
+             <p class="prod-category">Crème Brûlée</p>
+             <h2 class="prod-name">Vanilla Bean Crème Brûlée</h2>
+             <p class="prod-price">$7.00</p>
+             </div>
             </div>
-          </div>
 
           <div class="prod-card">
             <div class="prod-cta">
@@ -212,13 +218,44 @@
         </section>
 
         <section class="cart">
-          <h2>Your Cart (<span class="cart-quantity">0</span>)</h2>
-          <img
-            src="./assets/images/illustration-empty-cart.svg"
-            alt="empty cart image" />
-          <p>Your added items will appear here</p>
-        </section>
-      </div>
-    </div>
-  </body>
-</html>
+  <h2>Your Cart (7)</h2>
+
+  <ul class="cart-items">
+    <li>
+      <p>Classic Tiramisu</p>
+      <small>1x $5.50</small>
+     <button class="cart-items button">
+         <img src="./assets/images/icon-remove-item.svg"
+           alt="cancel icon" />
+     </button>
+    </li>
+    <li>
+      <p>Vanilla Bean Crème Brûlée</p>
+      <small>4x $7.00 = $28.00</small>
+      <button>
+         <img src="./assets/images/icon-remove-item.svg"
+           alt="cancel icon" />
+      </button>
+    </li>
+    <li>
+      <p>Vanilla Panna Cotta</p>
+      <small>2x $6.50 = $13.00</small>
+      <button>
+         <img src="./assets/images/icon-remove-item.svg"
+           alt="cancel icon" />
+      </button>
+    </li>
+  </ul>
+
+  <div class="cart-total">
+    <p><strong>Order Total</strong></p>
+    <p class="amount">$46.50</p>
+  </div>
+
+  <p class="eco-note">
+    <span>♻️</span> This is a <strong>carbon-neutral</strong> delivery
+  </p>
+
+  <button class="confirm-btn">Confirm Order</button>
+</section>
+
