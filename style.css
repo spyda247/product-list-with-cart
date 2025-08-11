@@ -328,7 +328,7 @@ body {
 @media screen and (max-width: 915px) {
   .container {
     /*background-color: aquamarine;*/
-    padding: 20px;
+    padding: 10px;
   }
   .wrapper {
     width: 100%;
@@ -338,23 +338,23 @@ body {
     align-items: center;
   }
   .title {
-    padding: 10px 0;
+    padding: 10px 0 0 20px;
   }
   .prod-list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding-right: 0;
+    justify-content: space-between;
   }
   .prod-card {
     display: flex;
     gap: 10px;
     width: 48%;
-    padding: 0;
+    /* padding: 0; */
   }
   .product-cta {
-    width: 100;
+    width: 100%;
   }
   .prod-cta img {
     width: 100%;
