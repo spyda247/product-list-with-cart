@@ -292,7 +292,6 @@ body {
 .qty-btn.increment img {
   width: 10px;
   height: 10px;
-  color: var(--Rose500);
 }
 .qty-btn.increment:hover img {
   filter: grayscale(100%);
@@ -307,7 +306,7 @@ body {
   transition: background-color 1s ease;
 }
 .qty-btn.decrement:hover {
-  background-color: white;
+  background-color: #fff;
 }
 .qty-btn.decrement img {
   width: 10px;
@@ -320,8 +319,7 @@ body {
 .qty-count {
   font-weight: 650;
   font-size: 14px;
-  color: var(--white);
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Media Queries */
