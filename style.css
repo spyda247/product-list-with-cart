@@ -160,6 +160,7 @@ body {
 .cart-items li {
   font-size: 14px;
   font-weight: 600;
+  border-bottom: 1px solid var(--Rose100);
   color: var(--Rose900);
   display: flex;
   justify-content: space-between;
@@ -173,12 +174,11 @@ body {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px;
-  /* flex: 1; */
 }
 .cart-items small {
-  /* display: block; */
   color: var(--Rose500);
   font-size: 13px;
+  padding-bottom: 8px;
 }
 .cart-items li button {
   background-color: transparent;
@@ -211,8 +211,7 @@ body {
   justify-content: space-between;
   font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 16px;
-  margin-top: 10px;
+  margin: 20px 0;
 }
 .cart-total .amount {
   color: var(--Rose900);
@@ -222,7 +221,7 @@ body {
 }
 .cart-total p {
   color: var(--Rose900);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
 }
 .cart-total small {
@@ -230,13 +229,28 @@ body {
   font-weight: 500;
 }
 .eco-note {
-  font-size: 13px;
   color: var(--Rose500);
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 20px;
+  background-color: var(--Rose100);
+  padding: 12px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eco-note img {
+  margin: auto 4px;
+  width: 15px;
+  aspect-ratio: 1;
+}
+.eco-note p {
+  margin-top: 3px;
+  font-size: 10px;
+  display: inline-block;
 }
 .eco-note span {
-  margin-right: 6px;
+  font-weight: 800;
 }
 .confirm-btn {
   background-color: var(--Red);
