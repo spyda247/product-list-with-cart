@@ -137,7 +137,6 @@ body {
   text-align: center;
   margin-left: auto;
   height: fit-content;
-  /*  align-self: flex-start; */
   width: 350px;
   gap: 20px;
   flex-direction: column;
@@ -182,7 +181,7 @@ body {
   font-size: 13px;
 }
 .cart-items li button {
-  background: none;
+  background-color: transparent;
   border: 2.5px solid var(--Rose300);
   border-radius: 100%;
   padding: 4px;
@@ -193,19 +192,19 @@ body {
   height: 18px;
   border-width: 1.8px;
   justify-content: center;
-  background-color: none;
-  margin-top: 0;
   position: absolute;
 }
 .cart-items li button:hover {
-  background-color: none;
   border-color: var(--Rose900);
-  transition: background-color 0.3s ease;
-  background-image: var(--Rose900);
 }
 .cart-items li button img {
   width: 8px;
   height: 8px;
+  transition: filter 0.3s ease;
+}
+.cart-items li button:hover img {
+  filter: invert(100%);
+  color: var(--Rose900);
 }
 .cart-total {
   display: flex;
