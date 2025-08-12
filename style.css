@@ -292,10 +292,10 @@ body {
 .qty-btn.increment img {
   width: 10px;
   height: 10px;
+  transition: filter 0.3s ease;
 }
 .qty-btn.increment:hover img {
-  filter: grayscale(100%);
-  filter: brightness(2%);
+  filter: invert(100%);
 }
 .qty-btn.decrement {
   padding: 8px;
@@ -311,10 +311,10 @@ body {
 .qty-btn.decrement img {
   width: 10px;
   height: 10px;
+  transition: filter 0.3s ease;
 }
 .qty-btn.decrement:hover img {
-  filter: grayscale(100%);
-  filter: brightness(2%);
+  filter: invert(100%);
 }
 .qty-count {
   font-weight: 650;
